@@ -16,9 +16,9 @@ public class as_book extends ActionSupport
     public String execute()
     {
 
-       // String sql="select * from books";
+
         booksystem book=new booksystem();
-       // System.out.println(author);
+        System.out.println(author);
         ArrayList list=book.author_book(author);
         ActionContext context=ActionContext.getContext();
         Map session=(Map)context.getSession();

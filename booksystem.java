@@ -115,15 +115,14 @@ public class booksystem
         try {
             con = getConnection();
             String sql = "delete from books where ISBN=\"" + ISBN + "\"";
+            System.out.println(sql);
             stmt = createStatement(sql);
             executeUpdate();
         }
         catch (Exception e) {
             System.out.println(e.toString());
         }
-        finally {
-            close();
-        }
+
     }
 
     //查找所有详情
